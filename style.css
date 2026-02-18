@@ -625,6 +625,36 @@ ul {
    border-color: white transparent transparent transparent;
 }
 
+/* --- PORUKA ZA KOLAČIĆE NA KARTI --- */
+.cookie-consent-msg {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #e5e7eb;
+   color: var(--text-gray);
+   z-index: 1;
+   transition: opacity 0.3s ease;
+   text-align: center;
+}
+
+.cookie-consent-msg i {
+   font-size: 2rem;
+   margin-bottom: 12px;
+   opacity: 0.6;
+}
+
+.cookie-consent-msg p {
+   font-size: 0.95rem;
+   font-weight: 500;
+   padding: 0 20px;
+}
+
 .map-marker-satellite {
    position: absolute;
    bottom: 24px;
