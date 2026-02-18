@@ -138,6 +138,13 @@ document.addEventListener('DOMContentLoaded', () => {
       mapIframes.forEach(iframe => {
          if (!iframe.getAttribute('src')) {
             iframe.setAttribute('src', iframe.getAttribute('data-src'));
+
+            // Sakrij poruku o kolačićima
+            const placeholder = iframe.closest('.map-placeholder');
+            const msg = placeholder.querySelector('.cookie-consent-msg');
+            if (msg) {
+               msg.style.display = 'none';
+            }
          }
       });
    }
