@@ -89,7 +89,6 @@ ul {
    font-size: 1.5rem;
    font-weight: 700;
    color: var(--text-dark);
-   /* Dodaj ove dvije linije ispod: */
    position: relative;
    display: inline-block;
    padding-bottom: 5px;
@@ -102,10 +101,7 @@ ul {
    left: 0;
    bottom: 0;
    height: 3px;
-   /* Debljina crte */
    width: 90%;
-   /* Duljina crte */
-   /* Gradijent koji polako nestaje prema desno */
    background: linear-gradient(to right, var(--text-dark) 0%, rgba(17, 24, 39, 0.5) 60%, transparent 100%);
    border-radius: 2px;
 }
